@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'SplashScreen.dart';
-import 'ToDoAssigned.dart';
 
 void main() {
   runApp(StateHomeScreen());
@@ -301,10 +300,6 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
           child: InkWell(
             onTap: () {
               // Navigate to another page here
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => StateToDoAssigned()),
-              );
             },
             child: Stack(
               children: [
