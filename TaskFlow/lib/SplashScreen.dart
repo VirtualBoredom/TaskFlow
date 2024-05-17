@@ -97,6 +97,11 @@ class SplashScreen extends State<StateSplashScreen> {
                     child: ElevatedButton(
                       onPressed: () {
                         // Handle login button press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => StateLoginScreen()),
+                        );
                       },
                       style: ButtonStyle(
                         backgroundColor:
@@ -125,7 +130,11 @@ class SplashScreen extends State<StateSplashScreen> {
                     ),
                     child: ElevatedButton(
                       onPressed: () {
-                        // Handle login button press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => StateRegisterScreen()),
+                        );
                       },
                       style: ButtonStyle(
                         elevation: MaterialStateProperty.all(

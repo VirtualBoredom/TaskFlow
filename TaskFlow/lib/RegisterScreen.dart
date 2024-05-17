@@ -17,8 +17,10 @@ class RegisterScreen extends State<StateRegisterScreen> {
   bool _obscureText = true;
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Container(
+        home: Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.center,
@@ -139,6 +141,11 @@ class RegisterScreen extends State<StateRegisterScreen> {
                           child: ElevatedButton(
                             onPressed: () {
                               // Handle login button press
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => StateLoginScreen()),
+                              );
                             },
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
@@ -196,7 +203,7 @@ class RegisterScreen extends State<StateRegisterScreen> {
           ),
         ),
       ),
-    );
+    ));
   }
 
   void click() {
