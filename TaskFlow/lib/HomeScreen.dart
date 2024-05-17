@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testtee/SplashScreen.dart';
-import 'package:testtee/ToDoScreen_ThisWeek.dart';
+import 'SplashScreen.dart';
 import 'ToDoAssigned.dart';
 
 void main() {
@@ -250,13 +249,7 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
           top: 200,
           right: 30,
           child: InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => StateToDoScreen_ThisWeek()),
-              );
-            },
+            onTap: () {},
             child: Stack(
               children: [
                 ClipRRect(
